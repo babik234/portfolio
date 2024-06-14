@@ -167,9 +167,17 @@
 
 .omnePage {
     height: 100vh;
-    background-color: rgb(245, 243, 243);
+    background-color: rgb(231, 231, 231);
     width: 100%;
     margin-top: 100vh;
+}
+.omnePage p {
+    text-align: center;
+    margin: auto;
+}
+.projektyP {
+    text-align: center;
+    margin: auto;
 }
 .H1 {
     letter-spacing: 10px;
@@ -196,18 +204,18 @@
     background-color: var(--color);
     margin-top: -5px;
 }
-.omnePage p {
+p {
+    letter-spacing: 1px;
     font-size: 18px;
-    padding-top: 15px;
-    text-align: center;
+    padding: 15px 0px;
     font-family: var(--textFont);
     width: 40%;
     font-weight: 300;
-    margin: auto;
 }
 .me {
     margin-left: 200px;
     width: 40vh;
+    border-radius: 20px;
 }
 .text {
     display: flex;
@@ -279,59 +287,44 @@
     font-size: 18px;
 }
 .projekty {
-    height: 200vh;
+    height: 250vh;
     width: 100%;
-    background-color: rgb(223, 222, 222);
+    background-color: rgb(245, 243, 243);
 }
 .ProjektyWrapper {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 150px;
 }
 
 .ProjektWrapper {
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    padding-left: 10%;
+    gap: 100px;
+    padding-left: 20%;
     align-items: center;
-}
-.ProjektWrapperR {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 50px;
-    padding-right: 10%;
-    align-items: center;
+    justify-content: center;
 }
 
 .ProjektWrapper img {
-    width: 500px;
-    height: 500px;
-}
-.ProjektWrapperR img {
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 400px;
+    border-radius: 10px;
 }
 
 .ProjektTexts {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 50%;
+    width: 100%;
     font-size: 30px;
     gap: 25px;
 }
-.ProjektTextsR {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    width: 50%;
-    font-size: 30px;
-    gap: 25px;
+.ProjektTexts p {
+    width: 500px;
 }
-.ProjektTextsR p {
-    text-align: right;
-}
+
 .Projekt-btn {
     text-decoration: none;
     background-color: var(--color);
