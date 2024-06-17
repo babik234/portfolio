@@ -575,7 +575,9 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
+    .arrow img {
+        margin-top: 20px;
+    }
     .footer {
         height: 60vh;
     }
