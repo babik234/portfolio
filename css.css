@@ -569,3 +569,54 @@ footer {
         padding-left: 0px;
     }
 }
+@media screen and (max-width: 400px) {
+    .hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        margin-left: 320px;
+        margin-top: 20px;
+    }
+    .nav {
+        width: 390px;
+    }
+    .projekty {
+        height: 420vh;
+    }
+    .upper {
+        width: 300px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .upper p {
+        width: 200px;
+    }
+    .footer {
+        height: 60vh;
+    }
+    .texts {
+        width: 350px;
+    }
+    .texts h1 {
+        width: 350px;
+    }
+    .texts h2 {
+        width: 350px;
+    }
+    .main {
+        height: 110vh;
+    }
+    .arrow img {
+        margin-top: 40px;
+    }
+    .omnePage {
+        height: 180vh;
+    }
+}
