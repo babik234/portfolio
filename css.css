@@ -19,14 +19,18 @@
     height: 10vh;
     z-index: 10;
 }
-.nav a {
+
+.a {
+    padding: 32px 50px 30px 0px;
+}
+.a a {
     text-decoration: none;
     color: #333;
     font-size: 17px;
     font-family: var(--nadpisFont);
     font-weight: 600;
     font-style: normal;
-    padding: 32px 50px 30px 0px;
+    padding-right: 20px;
 }
 .pfp {
     background-image: url(imgs/pfp.png);
@@ -390,10 +394,118 @@ footer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #333;
+}
+.hamburger {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .a {
+        display: none;
+        text-align: right;
+        flex-direction: column;
+        padding: 0px;
+        margin-top: 3vh;
+    }
+    .a a {
+        padding: 25px 55px 25px 25px;
+        border-top: #333 solid 1px;
+    }
+    .pfp {
+        margin-left: 2%;
+    }
+    .pfp-text {
+        margin-left: 9%;
+        margin-top: 32px;
+    }
+    .hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        margin-left: 500px;
+        margin-top: 25px;
+    }
+    .menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 99;
+        margin-left: 385px;
+        margin-top: 25px;
+    }
+    .menu a {
+        z-index: 1;
+    }
+    .nav {
+        display: block;
+        position: fixed;
+        width: 600px;
+    }
+    .main {
+    }
+    .pfp-text {
+        padding-left: 25px;
+        width: 200px;
+    }
+    .upper {
+        width: 400px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .upper p {
+        width: 200px;
+    }
+    .ProjektWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+    .ProjektWrapper img {
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .ProjektTexts {
+        align-items: center;
+    }
+    .wrapper {
+        flex-direction: column;
+        padding-left: 90px;
+        gap: 100px;
+    }
+    .me {
+        margin: 0px;
+    }
+    .omnePage {
+        height: 130vh;
+    }
+
+    .textsWrapper {
+        padding: 0px;
+        flex-direction: row;
+        width: 400px;
+    }
+    p {
+        width: 500px;
+    }
+    .projekty {
+        height: 300vh;
+    }
+    .Side-bar {
+        display: none;
+    }
+    .texts h1 {
+        font-size: 48px;
+        width: 500px;
+    }
+    .texts h2 {
+        font-size: 23px;
+        width: 500px;
+    }
 }
