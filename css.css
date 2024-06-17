@@ -569,6 +569,31 @@ footer {
         padding-left: 0px;
     }
 }
+@media screen and (max-width: 415px) {
+    .projekty {
+        height: 400vh;
+    }
+    .upper {
+        width: 350px;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        height: 65vh;
+    }
+    .omnePage {
+        height: 160vh;
+    }
+    .arrow img {
+        margin-top: 50px;
+    }
+    .main {
+        height: 110vh;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .hamburger {
         display: block;
