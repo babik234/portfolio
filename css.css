@@ -821,3 +821,22 @@ footer {
         height: 200vh;
     }
 }
+@media screen and (max-height: 650px) {
+    .projekty {
+        height: 550vh;
+    }
+    .footer {
+        height: 80vh;
+    }
+
+    .main {
+        height: 130vh;
+    }
+    .arrow img {
+        margin-top: 20px;
+    }
+    .omnePage {
+        margin-top: 130vh;
+        height: 220vh;
+    }
+}
