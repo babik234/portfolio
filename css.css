@@ -620,3 +620,38 @@ footer {
         height: 180vh;
     }
 }
+@media screen and (max-width: 380px) {
+    .hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+    .nav {
+        width: 390px;
+    }
+    .a a {
+        padding: 25px 90px 25px 25px;
+        border-top: #333 solid 1px;
+        width: 430px;
+    }
+    .pfp-text {
+        margin-left: 13%;
+        font-size: 10px;
+    }
+    .main {
+        height: 140vh;
+    }
+    .omnePage {
+        margin-top: 140vh;
+        height: 220vh;
+    }
+    .projekty {
+        height: 540vh;
+    }
+    .footer {
+        height: 80vh;
+    }
+}
