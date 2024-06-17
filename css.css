@@ -15,16 +15,16 @@
     background-color: white;
     height: 100px;
     width: 100%;
+    flex-direction: row;
+    gap: 200px;
 }
 .nav {
     display: block;
-    position: fixed;
     display: flex;
     gap: 20px;
     justify-content: right;
-    width: 100%;
     background-color: rgb(255, 255, 255);
-    height: 10vh;
+    height: 100px;
     z-index: 10;
 }
 .nav a {
@@ -37,7 +37,12 @@
     font-style: normal;
     padding-right: 50px;
 }
-
+.CeleLogo {
+    width: 400px;
+    height: 100px;
+    z-index: 20;
+    flex-direction: row;
+}
 .logo {
     background-image: url(imgs/pfp.png);
     width: 50px;
@@ -59,6 +64,7 @@
     font-style: normal;
     width: 375px;
     font-size: 10px;
+    margin-left: -190px;
 }
 .pfp-text a {
     text-decoration: none;
@@ -406,8 +412,15 @@ footer {
 }
 
 @media screen and (max-width: 1440px) {
-    .pfp {
+    .logo {
         margin-top: 25px;
+    }
+    .pfp-text {
+        margin-top: 40px;
+        font-size: 8px;
+    }
+    .nav a {
+        margin-top: 40px;
     }
     .textsWrapper {
         width: 450px;
@@ -421,6 +434,16 @@ footer {
     }
     .ProjektTexts p {
         width: 430px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .nav-bar {
+        gap: 0px;
+        width: 1100px;
+        margin: 0px;
+    }
+    .pfp-text {
+        margin-left: -90px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -450,6 +473,67 @@ footer {
     }
     .me {
         margin: 0px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .Side-bar {
+        display: none;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 1000px;
+        gap: 0px;
+    }
+    .nav a {
+        text-decoration: none;
+        text-align: right;
+        padding-right: 180px;
+        padding-top: 20px;
+
+        color: #333;
+        font-family: var(--nadpisFont);
+        font-weight: bold;
+        font-size: 20px;
+        border-top: #a7a7a7 1px solid;
+    }
+
+    .hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 1000;
+        position: fixed;
+        display: flex;
+        margin-top: 25px;
+        margin-left: 90%;
+    }
+    .menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 99;
+        margin-left: 385px;
+        margin-top: 25px;
+    }
+    .menu a {
+        z-index: 1;
+    }
+    .nav {
+        display: block;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav a {
+        font-size: 10px;
+    }
+    .nav {
+        margin-right: 1000px;
+    }
+    .pfp-text {
+        width: 150px;
     }
 }
 @media screen and (max-width: 600px) {
