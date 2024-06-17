@@ -403,6 +403,71 @@ footer {
 .hamburger {
     display: none;
 }
+
+@media screen and (max-width: 1440px) {
+    .nav {
+        position: fixed;
+    }
+    .a {
+        margin-top: 10px;
+        position: fixed;
+    }
+    .pfp-text {
+        margin-left: 9%;
+        margin-top: 40px;
+    }
+    .pfp {
+        margin-top: 25px;
+    }
+    .textsWrapper {
+        width: 450px;
+    }
+    .ProjektTexts {
+        width: 450px;
+    }
+    .ProjektWrapper {
+        padding-left: 0px;
+        align-items: center;
+    }
+    .ProjektTexts p {
+        width: 430px;
+    }
+    .projekty {
+        height: 200vh;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .a {
+        padding-right: 10px;
+    }
+    .textsWrapper {
+        width: 350px;
+    }
+    .ProjektyWrapper img {
+        width: 500px;
+        height: 350px;
+    }
+
+    .ProjektTexts {
+        width: 350px;
+    }
+    .ProjektWrapper {
+        padding-left: 0px;
+        align-items: center;
+    }
+    .ProjektTexts p {
+        width: 350px;
+    }
+    .wrapper {
+        gap: 100px;
+    }
+    .me {
+        margin: 0px;
+    }
+    .pfp-text {
+        margin-left: 12%;
+    }
+}
 @media screen and (max-width: 600px) {
     .a {
         display: none;
@@ -735,5 +800,24 @@ footer {
     }
     .omnePage {
         height: 190vh;
+    }
+}
+@media screen and (max-height: 750px) {
+    .projekty {
+        height: 500vh;
+    }
+    .footer {
+        height: 70vh;
+    }
+
+    .main {
+        height: 120vh;
+    }
+    .arrow img {
+        margin-top: 20px;
+    }
+    .omnePage {
+        margin-top: 120vh;
+        height: 200vh;
     }
 }
