@@ -589,6 +589,11 @@ footer {
         margin-left: 14%;
     }
 }
+@media screen and (max-width: 430px) {
+    .projekty {
+        height: 450vh;
+    }
+}
 @media screen and (max-width: 415px) {
     .projekty {
         height: 400vh;
