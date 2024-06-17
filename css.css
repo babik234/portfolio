@@ -696,3 +696,22 @@ footer {
         height: 80vh;
     }
 }
+@media screen and (max-width: 375px) {
+    .projekty {
+        height: 530vh;
+    }
+    .footer {
+        height: 74vh;
+    }
+    .nav {
+        height: 100px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .projekty {
+        height: 480vh;
+    }
+    .omnePage {
+        height: 190vh;
+    }
+}
