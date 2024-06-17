@@ -30,7 +30,7 @@
     font-family: var(--nadpisFont);
     font-weight: 600;
     font-style: normal;
-    padding-right: 50 px;
+    padding-right: 50px;
 }
 .pfp {
     background-image: url(imgs/pfp.png);
