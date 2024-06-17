@@ -656,7 +656,7 @@ footer {
 }
 @media screen and (max-width: 430px) {
     .projekty {
-        height: 450vh;
+        height: 400vh;
     }
 }
 @media screen and (max-width: 415px) {
@@ -838,5 +838,43 @@ footer {
     .omnePage {
         margin-top: 130vh;
         height: 220vh;
+    }
+}
+@media screen and (max-height: 600px) {
+    .projekty {
+        height: 600vh;
+    }
+    .footer {
+        height: 82vh;
+    }
+
+    .main {
+        height: 140vh;
+    }
+    .arrow img {
+        margin-top: 20px;
+    }
+    .omnePage {
+        margin-top: 130vh;
+        height: 235vh;
+    }
+}
+@media screen and (max-height: 550px) {
+    .projekty {
+        height: 640vh;
+    }
+    .footer {
+        height: 90vh;
+    }
+
+    .main {
+        height: 150vh;
+    }
+    .arrow img {
+        margin-top: 20px;
+    }
+    .omnePage {
+        margin-top: 140vh;
+        height: 255vh;
     }
 }
