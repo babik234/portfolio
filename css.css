@@ -568,6 +568,17 @@ footer {
         align-items: center;
         padding-left: 0px;
     }
+    .upper {
+        width: 375px;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        height: 60vh;
+    }
 }
 @media screen and (max-width: 415px) {
     .projekty {
