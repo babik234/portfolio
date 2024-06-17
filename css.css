@@ -7,9 +7,17 @@
     --color: #7843e9;
 }
 .nav-bar {
+    position: fixed;
     display: flex;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+    height: 100px;
+    width: 100%;
 }
 .nav {
+    display: block;
     position: fixed;
     display: flex;
     gap: 20px;
@@ -19,11 +27,8 @@
     height: 10vh;
     z-index: 10;
 }
-
-.a {
-    padding: 32px 50px 30px 0px;
-}
-.a a {
+.nav a {
+    margin-top: 35px;
     text-decoration: none;
     color: #333;
     font-size: 17px;
@@ -32,9 +37,9 @@
     font-style: normal;
     padding-right: 50px;
 }
-.pfp {
+
+.logo {
     background-image: url(imgs/pfp.png);
-    position: fixed;
     width: 50px;
     height: 30px;
     z-index: 11;
@@ -46,8 +51,7 @@
     padding: 28px;
 }
 .pfp-text {
-    position: fixed;
-    margin-left: 7%;
+    margin-left: 10px;
     z-index: 11;
     margin-top: 30px;
     font-family: var(--nadpisFont);
@@ -67,30 +71,30 @@
     flex-direction: column;
     background-image: url(imgs/Bimg.png);
     width: 100%;
-    height: 100vh;
     margin-top: 0px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    position: absolute;
+    position: relative;
 }
 .Side-bar {
+    margin-top: -600px;
     padding-left: 15px;
     padding-top: 15px;
     position: absolute;
     flex-direction: column;
     display: flex;
     gap: 20px;
-    margin-top: 340px;
     width: 60px;
     height: 220px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
 }
 .Side-bar-img {
     width: 30px;
-    height: 30 px;
+    height: 30px;
 }
 .texts {
     display: flex;
@@ -170,10 +174,9 @@
 }
 
 .omnePage {
-    height: 100vh;
     background-color: rgb(231, 231, 231);
     width: 100%;
-    margin-top: 100vh;
+    padding-bottom: 100px;
 }
 .omnePage p {
     text-align: center;
@@ -218,7 +221,6 @@ p {
 }
 .me {
     margin-left: 200px;
-    width: 40vh;
     border-radius: 20px;
 }
 .text {
@@ -291,8 +293,8 @@ p {
     font-size: 18px;
 }
 .projekty {
-    height: 230vh;
     width: 100%;
+    padding-bottom: 100px;
     background-color: rgb(245, 243, 243);
 }
 .ProjektyWrapper {
@@ -331,7 +333,6 @@ p {
 footer {
     background-color: black;
     width: 100%;
-    height: 40vh;
 }
 .upper h3 {
     color: white;
@@ -405,17 +406,6 @@ footer {
 }
 
 @media screen and (max-width: 1440px) {
-    .nav {
-        position: fixed;
-    }
-    .a {
-        margin-top: 10px;
-        position: fixed;
-    }
-    .pfp-text {
-        margin-left: 9%;
-        margin-top: 40px;
-    }
     .pfp {
         margin-top: 25px;
     }
@@ -431,9 +421,6 @@ footer {
     }
     .ProjektTexts p {
         width: 430px;
-    }
-    .projekty {
-        height: 200vh;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -464,21 +451,24 @@ footer {
     .me {
         margin: 0px;
     }
-    .pfp-text {
-        margin-left: 12%;
-    }
 }
 @media screen and (max-width: 600px) {
-    .a {
+    .nav {
         display: none;
-        text-align: right;
         flex-direction: column;
-        padding: 0px;
-        margin-top: 3vh;
+        margin-top: 100px;
     }
-    .a a {
-        padding: 25px 55px 25px 25px;
-        border-top: #333 solid 1px;
+    .nav a {
+        text-decoration: none;
+        text-align: right;
+        padding-right: 55px;
+        padding-top: 50px;
+        color: #333;
+        font-family: var(--nadpisFont);
+        font-weight: bold;
+        font-size: 20px;
+        border-top: #a7a7a7 1px solid;
+        gap: 0px;
     }
     .pfp {
         margin-left: 2%;
@@ -491,7 +481,8 @@ footer {
         display: block;
         width: 50px;
         height: 50px;
-        z-index: 100;
+        z-index: 1000;
+        position: fixed;
         margin-left: 500px;
         margin-top: 25px;
     }
@@ -508,7 +499,6 @@ footer {
     }
     .nav {
         display: block;
-        position: fixed;
         width: 600px;
     }
     .main {
@@ -547,9 +537,6 @@ footer {
     .me {
         margin: 0px;
     }
-    .omnePage {
-        height: 130vh;
-    }
 
     .textsWrapper {
         padding: 0px;
@@ -558,9 +545,6 @@ footer {
     }
     p {
         width: 500px;
-    }
-    .projekty {
-        height: 300vh;
     }
     .Side-bar {
         display: none;
@@ -616,12 +600,7 @@ footer {
     .me {
         width: 300px;
     }
-    .projekty {
-        height: 380vh;
-    }
-    .omnePage {
-        height: 150vh;
-    }
+
     .nav {
         width: 430px;
         height: 100px;
@@ -647,22 +626,14 @@ footer {
     .arrow img {
         margin-top: 100px;
     }
-    .footer {
-        height: 60vh;
-    }
+
     .pfp-text {
         margin-left: 14%;
     }
 }
 @media screen and (max-width: 430px) {
-    .projekty {
-        height: 400vh;
-    }
 }
 @media screen and (max-width: 415px) {
-    .projekty {
-        height: 400vh;
-    }
     .upper {
         width: 350px;
     }
@@ -670,17 +641,9 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .footer {
-        height: 65vh;
-    }
-    .omnePage {
-        height: 160vh;
-    }
+
     .arrow img {
         margin-top: 50px;
-    }
-    .main {
-        height: 110vh;
     }
 }
 
@@ -714,9 +677,6 @@ footer {
     .upper p {
         width: 200px;
     }
-    .footer {
-        height: 60vh;
-    }
     .texts {
         width: 350px;
     }
@@ -726,14 +686,9 @@ footer {
     .texts h2 {
         width: 350px;
     }
-    .main {
-        height: 110vh;
-    }
+
     .arrow img {
         margin-top: 40px;
-    }
-    .omnePage {
-        height: 180vh;
     }
 }
 @media screen and (max-width: 380px) {
@@ -757,19 +712,6 @@ footer {
         margin-left: 13%;
         font-size: 10px;
     }
-    .main {
-        height: 140vh;
-    }
-    .omnePage {
-        margin-top: 140vh;
-        height: 220vh;
-    }
-    .projekty {
-        height: 540vh;
-    }
-    .footer {
-        height: 80vh;
-    }
 }
 @media screen and (max-width: 375px) {
     .arrow img {
@@ -778,103 +720,24 @@ footer {
     .texts {
         padding-top: 150px;
     }
-    .projekty {
-        height: 530vh;
-    }
-    .footer {
-        height: 74vh;
-    }
-    .main {
-        height: 110vh;
-    }
-    .omnePage {
-        margin-top: 110vh;
-    }
     .nav {
         height: 100px;
     }
 }
 @media screen and (max-width: 360px) {
-    .projekty {
-        height: 480vh;
-    }
-    .omnePage {
-        height: 190vh;
-    }
 }
 @media screen and (max-height: 750px) {
-    .projekty {
-        height: 500vh;
-    }
-    .footer {
-        height: 70vh;
-    }
-
-    .main {
-        height: 120vh;
-    }
     .arrow img {
         margin-top: 20px;
-    }
-    .omnePage {
-        margin-top: 120vh;
-        height: 200vh;
     }
 }
 @media screen and (max-height: 650px) {
-    .projekty {
-        height: 550vh;
-    }
-    .footer {
-        height: 80vh;
-    }
-
-    .main {
-        height: 130vh;
-    }
     .arrow img {
         margin-top: 20px;
-    }
-    .omnePage {
-        margin-top: 130vh;
-        height: 220vh;
     }
 }
 @media screen and (max-height: 600px) {
-    .projekty {
-        height: 600vh;
-    }
-    .footer {
-        height: 82vh;
-    }
-
-    .main {
-        height: 140vh;
-    }
     .arrow img {
         margin-top: 20px;
-    }
-    .omnePage {
-        margin-top: 130vh;
-        height: 235vh;
-    }
-}
-@media screen and (max-height: 550px) {
-    .projekty {
-        height: 640vh;
-    }
-    .footer {
-        height: 90vh;
-    }
-
-    .main {
-        height: 150vh;
-    }
-    .arrow img {
-        margin-top: 20px;
-    }
-    .omnePage {
-        margin-top: 140vh;
-        height: 255vh;
     }
 }
