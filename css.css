@@ -534,6 +534,10 @@ footer {
         display: none;
         flex-direction: column;
         margin-top: 100px;
+        position: absolute;
+        justify-content: center;
+        align-items: flex-end;
+        width: 600px;
     }
     .nav a {
         text-decoration: none;
@@ -544,15 +548,24 @@ footer {
         font-family: var(--nadpisFont);
         font-weight: bold;
         font-size: 20px;
+        width: 100%;
         border-top: #a7a7a7 1px solid;
         gap: 0px;
     }
     .pfp {
-        margin-left: 2%;
+        margin-left: 20px;
     }
     .pfp-text {
-        margin-left: 9%;
-        margin-top: 32px;
+        font-size: 10px;
+        text-align: left;
+        padding-left: 0px;
+        margin: 0px;
+        width: 200px;
+    }
+    .logo {
+        width: 400px;
+        align-items: center;
+        justify-content: flex-start;
     }
     .hamburger {
         display: block;
@@ -574,15 +587,7 @@ footer {
     .menu a {
         z-index: 1;
     }
-    .nav {
-        display: block;
-        width: 600px;
-    }
     .main {
-    }
-    .pfp-text {
-        padding-left: 25px;
-        width: 200px;
     }
     .upper {
         width: 400px;
