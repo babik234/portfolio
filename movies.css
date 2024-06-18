@@ -1,0 +1,21 @@
+.games-grid {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+.game-item {
+    width: 300px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 10px;
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
