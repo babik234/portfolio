@@ -1,21 +1,155 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+
+    --nadpisFont: "Poppins", sans-serif;
+    --textFont: "Noto Sans", sans-serif;
+    --color: #7843e9;
+}
+body {
+    background-color: #111;
+}
 .games-grid {
     display: grid;
     column-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    margin-left: 200px;
 }
 .game-item {
-    width: 300px;
+    width: 400px;
+    background-color: #222;
+    border-radius: 30px;
+    margin-bottom: 30px;
 }
-
+.hover {
+    width: 400px;
+    background-color: #222;
+    margin-top: 5px;
+    border-radius: 30px;
+    height: 200px;
+    display: none;
+}
+.game-item img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 .search {
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     gap: 10px;
+    padding-top: 50px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 100vh;
+}
+.nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    font-family: var(--nadpisFont);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav h2 {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: var(--nadpisFont);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.input {
+    width: 1000px;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: #333;
+    padding: 15px;
+}
+.btn {
+    border-radius: 20px;
+    height: 4vh;
+    background-color: #333;
+    color: white;
+    font-family: var(--textFont);
+    text-transform: uppercase;
+    padding: 5px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.loading {
+    color: white;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+li:hover {
+    cursor: pointer;
+    color: rgb(197, 197, 197);
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: var(--nadpisFont);
+    align-items: center;
+    padding: 10px;
+    padding-left: 15px;
 }
 .description {
+    padding: 10px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-family: var(--nadpisFont);
+    text-transform: uppercase;
+}
+.btns {
+    height: 5vh;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.part {
+    display: flex;
+    margin-left: 250px;
+}
+.genre-button {
+    padding: 1px 25px;
+    background-color: #222;
+    margin: 2px;
+    border-radius: 5px;
+}
+.active {
+    background-color: grey;
+}
+.main {
 }
