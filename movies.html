@@ -18,29 +18,25 @@
     </head>
 
     <body>
-        <div class="nav-bar">
-            <nav class="nav">
-                <a href="">HOME</a>
-
-                <h2>GENRES</h2>
-
-                <h2>plaforms</h2>
-                <div class="">
-                    <ul>
-                        <li id="platform-pc">PC GAMES</li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
         <main class="main">
+            <h1 class="logo"><a href="">FTPGAMES</a></h1>
             <div class="search">
-                <input type="text" id="input" class="input" placeholder="Search..." />
-                <button class="btn" onclick="SEARCH()">Search</button>
-
-                <button id="btn" class="btn" onclick="RESET()">RESET FILTERS</button>
+                <input type="text" id="input" class="input" placeholder="Search..."/>
+                <button class="searchBtn" onclick="SEARCH()"
+                >Search</button>
             </div>
-            <div class="btns">
-                <div class="part" id="genre-buttons"></div>
+
+            <div class="genres">
+                <h2 class="nadpis" id="filters">filters</h2>
+                <div class="btns">
+                    <div class="genre-buttons" 
+                    id="genre-buttons">
+                    
+                    <!--
+                    <button id="btn" class="btn" onclick="RESET()">RESET FILTERS</button>
+                    -->
+
+                </div>
             </div>
             <div class="games-grid" id="games-grid">
                 <div class="loading" id="loading">Loading...</div>
